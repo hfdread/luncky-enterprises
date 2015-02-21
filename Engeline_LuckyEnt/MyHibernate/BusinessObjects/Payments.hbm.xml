@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'Payments' -->
+  <class name="MyHibernate.BusinessObjects.Payments, MyHibernate" table="Payments" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Customer" class="Contacts" column="CustomerID" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+
+    <many-to-one name="invoice" class="SalesInvoice" column="InvoiceID" cascade="none" lazy="false"
+                 not-found="ignore"></many-to-one>
+
+    <many-to-one name="counter" class="Counter" column="CounterID" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+
+    <many-to-one name="PDCdetail" class="PaymentsPDC" column="PDC_ID" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+
+    <property name="PaymentDate" column="PaymentDate" />
+    <property name="Amount" column="Amount" />
+    <property name="PaymentType" column="PaymentType" />
+    <property name="AmountApplied" column="AmountApplied" />
+    <property name="AmountUsed" column="AmountUsed" />
+    <property name="Canceled" column="Canceled" />
+    <property name="Reviewed" column="Reviewed" />
+
+    <many-to-one name="user" class="Users" column="UserID" cascade="none" lazy="false"></many-to-one>
+      
+    <!--<bag name="details" inverse="true" cascade="none" lazy="false">
+         <key column="PaymentID"/>
+         <one-to-many class="PaymentsDetail"/>
+      </bag>-->
+  </class>
+</hibernate-mapping>

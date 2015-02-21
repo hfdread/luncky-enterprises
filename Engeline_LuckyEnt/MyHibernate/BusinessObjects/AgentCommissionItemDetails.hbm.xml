@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'AgentCommissionItemDetails' -->
+  <class name="MyHibernate.BusinessObjects.AgentCommissionItemDetails, MyHibernate" table="AgentCommissionItemDetails"
+         lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="commission" class="AgentCommission" column="CommissionID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="ItemDetails" class="AgentQuotaItemDetails" column="ItemDetails_ID" cascade="none" lazy="false"></many-to-one>
+    <property name="AmountSales" />
+  </class>
+</hibernate-mapping>

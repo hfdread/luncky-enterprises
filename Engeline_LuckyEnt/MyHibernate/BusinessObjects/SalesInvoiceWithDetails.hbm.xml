@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'SalesInvoice' -->
+  <class name="MyHibernate.BusinessObjects.SalesInvoiceWithDetails, MyHibernate" table="SalesInvoice" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Customer" class="Contacts" column="CustomerID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="InvoiceType" column="InvoiceType" />
+    <property name="ReceiptNumber" column="ReceiptNumber" />
+    <property name="PO_Number" column="PO_Number" />
+    <property name="InvoiceDate" column="InvoiceDate" />
+    <property name="PaymentType" column="PaymentType" />
+    <property name="Terms" column="Terms" />
+    <property name="Notes" column="Notes" />
+    <property name="AmountDue" column="AmountDue" />
+    <property name="AmountReturned" column="AmountReturned" />
+    <property name="PaymentCash" column="PaymentCash" />
+    <property name="PaymentPDC" column="PaymentPDC" />
+    <property name="PaymentForDeposit" column="PaymentForDeposit" />
+    <property name="PaymentWithholding" column="PaymentWithholding" />
+    <property name="CounterID" column="CounterID" />
+    <property name="LoanedItemID" column="LoanedItemID" />
+    <property name="Printed" column="Printed" />
+    <property name="Deleted" column="Deleted" />
+    <property name="BadDebt" column="BadDebt" />
+    <property name="Withheld" column="Withheld" />
+    <property name="WithholdingAmount" column="WithholdingAmount" />
+    <property name="PaymentStatus" column="PaymentStatus" />
+    <many-to-one name="EnteredBy" class="Users" column="UserID" cascade="none" lazy="false"></many-to-one>
+
+    <bag name="details" inverse="true" cascade="none" lazy="false">
+         <key column="SalesInvoiceID"/>
+         <one-to-many class="SalesInvoiceDetails"/>
+      </bag>
+  </class>
+</hibernate-mapping>

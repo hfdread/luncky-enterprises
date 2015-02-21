@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'BadOrder' -->
+  <class name="MyHibernate.BusinessObjects.BadOrder, MyHibernate" table="BadOrder" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <property name="BO_Date" />
+    <property name="Amount" />
+    <property name="VoucherID" />
+    <property name="Cancelled" />
+  </class>
+</hibernate-mapping>

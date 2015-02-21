@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'StatementofAccount' -->
+  <class name="MyHibernate.BusinessObjects.StatementofAccount, MyHibernate" table="statementofaccount" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Supplier" class="Contacts" column="SupplierID" cascade="none" lazy="false"></many-to-one>
+    <many-to-one name="ShippingCompany" class="Shipping" column="Shipping" cascade="none" lazy="false"></many-to-one>
+
+    <property name="EstimatedArrival" column="EstimatedArrival" />
+    <property name="TransactionDate" column="TransactionDate" />
+    <property name="ShipName" column="ShipName" />
+    <property name="VoyageNumber" column="VoyageNumber" />
+    <property name="BillofLeading" column="BillofLeading" />
+    <property name="Payment" column="Payment" />
+    <property name="PayDate" column="PayDate" />
+    <property name="ChequeNumber" column="ChequeNumber" />
+    <property name="ShippingStatus" column="ShippingStatus" />
+    <property name="Handling" column="Handling" />
+    <property name="Notes" column="Notes" />
+    <property name="AmountDue" column="AmountDue" />
+    <property name="AmountDueOverride" column="AmountDueOverride" />
+    <property name="Canceled" column="Canceled" />
+    <property name="wh_id" column="wh_id" />
+
+    <many-to-one name="user" class="Users" column="UserID" cascade="none" lazy="false"></many-to-one>
+
+    <bag name="details" inverse="true" cascade="none" lazy="false">
+      <key column="SOC_ID" />
+      <one-to-many class="StatementofAccountDetails" />
+    </bag>
+  </class>
+</hibernate-mapping>

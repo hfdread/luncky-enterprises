@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'WireBreakdown' -->
+  <class name="MyHibernate.BusinessObjects.WireBreakdown, MyHibernate" table="WireBreakdown" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="SID" class="StockInDetails" column="StockInDetails_ID" cascade="none" lazy="false"></many-to-one>
+    <property name="BreakDownID" />
+    <property name="QTY_OnHand" />
+    <property name="QTY_Original" />
+  </class>
+</hibernate-mapping>

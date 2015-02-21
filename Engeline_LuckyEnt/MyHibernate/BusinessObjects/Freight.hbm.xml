@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'Freight' -->
+  <class name="MyHibernate.BusinessObjects.Freight, MyHibernate" table="Freight" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <property name="SI_Amount" column="SI_Amount" />
+    <property name="Total_Amount" column="Total_Amount" />
+    <property name="FreightPercentage" column="FreightPercentage" />
+  </class>
+</hibernate-mapping>

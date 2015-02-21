@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'PurchaseOrder' -->
+  <class name="MyHibernate.BusinessObjects.PurchaseOrderDiscounts, MyHibernate" table="purchaseorderdiscounts"
+         lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Supplier" class="Contacts" column="SupplierID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="item" class="Items" column="ItemID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="Discount" column="Discount" />
+  </class>
+</hibernate-mapping>

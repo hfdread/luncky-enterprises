@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyHibernate.BusinessObjects.SalesInvoice">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="MyHibernate.BusinessObjects.SalesInvoice.eInvoiceType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\SalesInvoice.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="MyHibernate.BusinessObjects.SalesInvoice.ePaymentType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\SalesInvoice.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="MyHibernate.BusinessObjects.SalesInvoice.ePaymentStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\SalesInvoice.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AFEgCCBAAAAAhACAEQAQEQAAIJAQIGCCgAAAAACAABI=</HashCode>
+      <FileName>BusinessObjects\SalesInvoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="EnteredBy" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="details" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.SalesInvoiceDetails">
+    <Position X="3" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIQQAEAQAgAAAAgQBAARAAABoAAAAAACAMAgEAAQ=</HashCode>
+      <FileName>BusinessObjects\SalesInvoiceDetails.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="item" />
+      <Property Name="fabitem" />
+      <Property Name="tradeitem" />
+      <Property Name="bundleditem" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="stockindetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.SalesInvoiceDetails_StockIn">
+    <Position X="6" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAgYAAAAAAABgAAABgAEAAAABAAA=</HashCode>
+      <FileName>BusinessObjects\SalesInvoiceDetails_StockIn.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="wirebreakdown" />
+      <Property Name="stockindetails" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.WireBreakdown">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAgAAABAAAAAAACAAAAAAAAAAAAABAIAA=</HashCode>
+      <FileName>BusinessObjects\WireBreakdown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.StockInDetails">
+    <Position X="9.5" Y="3" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="MyHibernate.BusinessObjects.StockInDetails.eStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\StockInDetails.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAQEAUAIgAAAAAYAAQAFgADoJAAhggEAAAAAAAQ=</HashCode>
+      <FileName>BusinessObjects\StockInDetails.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="item" />
+      <Property Name="fabricateditem" />
+      <Property Name="tradingitem" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="wirebreakdown_details" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.Items" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAggAAgAQAAAAQAAAAgAAAIAAAIAAABAgI=</HashCode>
+      <FileName>BusinessObjects\Items.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.FabricatedItem" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAkgAAAAAAAAEQAAAAAAAAgAAAAAAAAgAA=</HashCode>
+      <FileName>BusinessObjects\FabricatedItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.TradingItem" Collapsed="true">
+    <Position X="4.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAkgAAAAAAAAEQAAAAAAAAgAAAAAAAAgAA=</HashCode>
+      <FileName>BusinessObjects\TradingItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.BundledItem" Collapsed="true">
+    <Position X="4.75" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAggAAAAQAAAAQAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\BundledItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.Contacts" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UPABSEAAIThihCAmAAEaBAAgCAAANjUCTAAYAgYQMJ4=</HashCode>
+      <FileName>BusinessObjects\Contacts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.Users" Collapsed="true">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAggEAAAAAAAAAAAAACAAABQAAAAIAAAA=</HashCode>
+      <FileName>BusinessObjects\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

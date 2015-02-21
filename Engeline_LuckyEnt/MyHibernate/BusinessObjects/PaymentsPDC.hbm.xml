@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'PaymentsPDC' -->
+  <class name="MyHibernate.BusinessObjects.PaymentsPDC, MyHibernate" table="PaymentsPDC" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="bank" class="Banks" column="BankID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="payment" class="Payments" column="PaymentID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="AccountNumber" column="AccountNumber" />
+    <property name="CheckNumber" column="CheckNumber" />
+    <property name="Amount" column="Amount" />
+    <property name="CheckDate" column="CheckDate" />
+    <property name="ClearingDate" column="ClearingDate" />
+    <property name="Status" column="Status" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'AgentQuotaExemptItem' -->
+  <class name="MyHibernate.BusinessObjects.AgentQuotaExemptItem, MyHibernate" table="AgentQuotaExemptItem" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="ItemDetail" class="AgentQuotaItemDetails" column="ItemDetailsID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="ItemID" />
+  </class>
+</hibernate-mapping>

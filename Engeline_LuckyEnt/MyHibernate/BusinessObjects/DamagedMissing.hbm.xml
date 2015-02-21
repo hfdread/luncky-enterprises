@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'Users' -->
+  <class name="MyHibernate.BusinessObjects.DamagedMissing, MyHibernate" table="damagedMissing" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="stockin" class="StockIn" column="StockInID" cascade="none" lazy="false"></many-to-one>
+    <many-to-one name="item" class="Items" column="ItemID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="Original_Qty" />
+    <property name="Damage_Qty" />
+    <property name="Missing_Qty" />
+    <property name="TrxDate" />
+    <property name="ReStock" />
+    <property name="NewStockinID" />
+    <property name="Warehouse" />
+    <property name="SellingPrice" />
+  </class>
+</hibernate-mapping>

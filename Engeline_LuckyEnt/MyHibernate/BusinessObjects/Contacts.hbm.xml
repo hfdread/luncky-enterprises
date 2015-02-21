@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'Contacts' -->
+  <class name="MyHibernate.BusinessObjects.Contacts, MyHibernate" table="contacts" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <!--contact info-->
+    <property name="CompanyName" column="CompanyName" />
+    <property name="CompanyAddress" column="CompanyAddress" />
+    <property name="CompanyContactNumber" column="CompanyContactNumber" />
+    <property name="AnnualCommisionPercentage" column="AnnualCommisionPercentage" />
+
+    <many-to-one name="Agent" class="Contacts" column="AgentID" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+
+    <!--[Credit Info]-->
+    <property name="Terms" column="Terms" />
+    <property name="Terms_PDC" column="Terms_PDC" />
+    <property name="CreditLimit" column="CreditLimit" />
+    <property name="CreditUsed" column="CreditUsed" />
+
+    <!--[Personal Information]-->
+    <property name="ContactType" column="ContactType" />
+    <property name="SalesRepresentative" column="SalesRepresentative" />
+    <property name="FirstName" column="FirstName" />
+    <property name="MiddleName" column="MiddleName" />
+    <property name="LastName" column="LastName" />
+    <property name="Address" column="Address" />
+    <property name="MobileNumber" column="MobileNumber" />
+    <property name="LandlineNumber" column="LandlineNumber" />
+    <property name="FaxNumber" column="FaxNumber" />
+    <property name="Description" column="Description" />
+
+    <!--Company Data-->
+    <property name="Comp_TIN" column="Comp_TIN" />
+    <property name="Comp_BIR_Acc_No" column="Comp_BIR_Acc_No" />
+    <property name="Comp_SEC_Acc_No1" column="Comp_SEC_Acc_No1" />
+    <property name="Comp_SEC_Acc_No2" column="Comp_SEC_Acc_No2" />
+    <property name="Comp_C13" column="Comp_C13" />
+    <property name="Comp_Non_Vat_Reg" column="Comp_Non_Vat_Reg" />
+    <property name="Comp_Vat_Reg" column="Comp_Vat_Reg" />
+
+    <!--Contact Persons-->
+    <property name="Comp_Contact_Person_Accounting" column="Comp_Contact_Person_Accounting" />
+    <property name="Comp_Contact_Number_Accounting" column="Comp_Contact_Number_Accounting" />
+    <property name="Comp_Contact_Person_Purchasing" column="Comp_Contact_Person_Purchasing" />
+    <property name="Comp_Contact_Number_Purchasing" column="Comp_Contact_Number_Purchasing" />
+    <property name="Comp_Contact_Person_HeadOffice" column="Comp_Contact_Person_HeadOffice" />
+    <property name="Comp_Contact_Number_HeadOffice" column="Comp_Contact_Number_HeadOffice" />
+
+    <!--Present Suppliers / Business References-->
+    <property name="BusinessRef_Name1" column="BusinessRef_Name1" />
+    <property name="BusinessRef_Address1" column="BusinessRef_Address1" />
+    <property name="BusinessRef_ContactPerson1" column="BusinessRef_ContactPerson1" />
+    <property name="BusinessRef_Number1" column="BusinessRef_Number1" />
+    <property name="BusinessRef_Name2" column="BusinessRef_Name2" />
+    <property name="BusinessRef_Address2" column="BusinessRef_Address2" />
+    <property name="BusinessRef_ContactPerson2" column="BusinessRef_ContactPerson2" />
+    <property name="BusinessRef_Number2" column="BusinessRef_Number2" />
+    <property name="BusinessRef_Name3" column="BusinessRef_Name3" />
+    <property name="BusinessRef_Address3" column="BusinessRef_Address3" />
+    <property name="BusinessRef_ContactPerson3" column="BusinessRef_ContactPerson3" />
+    <property name="BusinessRef_Number3" column="BusinessRef_Number3" />
+
+    <!--Principal Stock Holders / Incorporators-->
+    <property name="StockHolderName1" column="StockHolderName1" />
+    <property name="StockHolderAddress1" column="StockHolderAddress1" />
+    <property name="StockHolderNumber1" column="StockHolderNumber1" />
+    <property name="StockHolderName2" column="StockHolderName2" />
+    <property name="StockHolderAddress2" column="StockHolderAddress2" />
+    <property name="StockHolderNumber2" column="StockHolderNumber2" />
+    <property name="StockHolderName3" column="StockHolderName3" />
+    <property name="StockHolderAddress3" column="StockHolderAddress3" />
+    <property name="StockHolderNumber3" column="StockHolderNumber3" />
+
+    <!--Bank Reference-->
+    <many-to-one name="BankRef1" class="Banks" column="BankRef1" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+    <property name="BankBranch1" column="BankBranch1" />
+    <property name="BankAccountNum1" column="BankAccountNum1" />
+    <property name="BankContactNumber1" column="BankContactNumber1" />
+
+    <many-to-one name="BankRef2" class="Banks" column="BankRef2" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+    <property name="BankBranch2" column="BankBranch2" />
+    <property name="BankAccountNum2" column="BankAccountNum2" />
+    <property name="BankContactNumber2" column="BankContactNumber2" />
+
+    <many-to-one name="BankRef3" class="Banks" column="BankRef3" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+    <property name="BankBranch3" column="BankBranch3" />
+    <property name="BankAccountNum3" column="BankAccountNum3" />
+    <property name="BankContactNumber3" column="BankContactNumber3" />
+
+    <many-to-one name="BankRef4" class="Banks" column="BankRef4" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+    <property name="BankBranch4" column="BankBranch4" />
+    <property name="BankAccountNum4" column="BankAccountNum4" />
+    <property name="BankContactNumber4" column="BankContactNumber4" />
+
+    <many-to-one name="BankRef5" class="Banks" column="BankRef5" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+    <property name="BankBranch5" column="BankBranch5" />
+    <property name="BankAccountNum5" column="BankAccountNum5" />
+    <property name="BankContactNumber5" column="BankContactNumber5" />
+
+    <!--Company Officials-->
+    <property name="CompanyOfficial_Name1" column="CompanyOfficial_Name1" />
+    <property name="CompanyOfficial_Address1" column="CompanyOfficial_Address1" />
+    <property name="CompanyOfficial_Number1" column="CompanyOfficial_Number1" />
+    <property name="CompanyOfficial_Designation1" column="CompanyOfficial_Designation1" />
+    <property name="CompanyOfficial_Name2" column="CompanyOfficial_Name2" />
+    <property name="CompanyOfficial_Address2" column="CompanyOfficial_Address2" />
+    <property name="CompanyOfficial_Number2" column="CompanyOfficial_Number2" />
+    <property name="CompanyOfficial_Designation2" column="CompanyOfficial_Designation2" />
+    <property name="CompanyOfficial_Name3" column="CompanyOfficial_Name3" />
+    <property name="CompanyOfficial_Address3" column="CompanyOfficial_Address3" />
+    <property name="CompanyOfficial_Number3" column="CompanyOfficial_Number3" />
+    <property name="CompanyOfficial_Designation3" column="CompanyOfficial_Designation3" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,148 @@
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Engeline_LuckyEnt.exe.config
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Engeline_LuckyEnt.exe
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Engeline_LuckyEnt.pdb
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Data.v11.2.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Data.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.RichEdit.v11.2.Core.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Utils.v11.2.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Utils.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraBars.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraCharts.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraEditors.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraGrid.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraNavBar.v11.2.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraNavBar.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraPivotGrid.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraPrinting.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraReports.v11.2.Extensions.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraReports.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraRichEdit.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraTreeList.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\MyHibernate.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\MyHibernate.pdb
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Data.v11.2.xml
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Utils.v11.2.xml
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraNavBar.v11.2.xml
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\de\DevExpress.Data.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ja\DevExpress.Data.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ru\DevExpress.Data.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\de\DevExpress.Utils.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ja\DevExpress.Utils.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ru\DevExpress.Utils.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\de\DevExpress.XtraNavBar.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ja\DevExpress.XtraNavBar.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ru\DevExpress.XtraNavBar.v11.2.resources.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\ResolveAssemblyReference.cache
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.Forms.frmMain.resources
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.Properties.Resources.resources
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.exe.licenses
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.exe
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.pdb
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Antlr3.Runtime.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Iesi.Collections.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\log4net.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\NHibernate.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.frmMain2.resources
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlContacts.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Engeline_LuckyEnt.exe.config
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Engeline_LuckyEnt.exe
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Engeline_LuckyEnt.pdb
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Antlr3.Runtime.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Data.v11.2.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Data.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.RichEdit.v11.2.Core.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Utils.v11.2.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Utils.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraBars.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraCharts.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraEditors.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraGrid.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraNavBar.v11.2.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraNavBar.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraPivotGrid.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraPrinting.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraReports.v11.2.Extensions.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraReports.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraRichEdit.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraTreeList.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\Iesi.Collections.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\log4net.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\MyHibernate.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\NHibernate.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\MyHibernate.pdb
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Data.v11.2.xml
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.Utils.v11.2.xml
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\DevExpress.XtraNavBar.v11.2.xml
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\de\DevExpress.Data.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\es\DevExpress.Data.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ja\DevExpress.Data.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ru\DevExpress.Data.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\de\DevExpress.Utils.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\es\DevExpress.Utils.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ja\DevExpress.Utils.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ru\DevExpress.Utils.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\de\DevExpress.XtraNavBar.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\es\DevExpress.XtraNavBar.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ja\DevExpress.XtraNavBar.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\bin\Release\ru\DevExpress.XtraNavBar.v11.2.resources.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\ResolveAssemblyReference.cache
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.Forms.frmDBConnect.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.Forms.frmGenericPopup.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.Forms.frmMain.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.frmMain2.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.Properties.Resources.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.ctlUserLogin.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlContacts.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewAgents.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewBanks.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.exe.licenses
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.exe
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.pdb
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewInventory.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlPurchaseOrder.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlStockIn.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlInputPO.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlInputPOSelect.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlSelectItems_PO.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.ctlDateRange.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewPurchaseOrders.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewStockIn.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlFreight.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlSelectMiscItem.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlNoPriceItems.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlNoPriceItemSetPrice.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.ctlItems.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlSalesInvoice.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Accounting.ctlReceivePayment.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewSalesInvoice.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Accounting.ctlPaymentPDC.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlSelectItems_Invoice.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlSalesInvoiceChangePrice.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewWarehouse.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlCompanyProfile.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlWarehouse.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlStateofAccounts.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlStateofAccounts_AddItem.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlVantrackers.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlShipping.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewStatement.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewArriveShipment.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlStockin_UpdateWarehouse.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlStatementofAccount_ReceivePayment.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewArriveShipment_Trucking.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlDestination.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlTrucking.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlStockin_DamagedMissingForm.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewDamagedMissing.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Viewers.ctlViewDamagedMissing_Salvage.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Transactions.ctlReleaseOrder.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Reports.xrptReleaseOrders.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlRequestSend.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlRequestApproval.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.User.ctlUserDetails.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.User.ctlUsers.resources
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\Engeline_LuckyEnt\obj\x86\Release\Engeline_LuckyEnt.UI_Controls.Utilities.ctlViewRequestApproval.resources

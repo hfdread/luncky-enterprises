@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'Users' -->
+  <class name="MyHibernate.BusinessObjects.Shipping, MyHibernate" table="shipping" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <property name="CompanyName" />
+    <property name="Contact1" />
+    <property name="Contact2" />
+  </class>
+</hibernate-mapping>

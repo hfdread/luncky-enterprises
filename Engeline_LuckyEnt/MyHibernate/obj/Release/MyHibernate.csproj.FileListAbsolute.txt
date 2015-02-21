@@ -1,0 +1,18 @@
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\MyHibernate.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\MyHibernate.pdb
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\NHibernate.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\Iesi.Collections.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\Antlr3.Runtime.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\log4net.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\obj\Release\ResolveAssemblyReference.cache
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\obj\Release\MyHibernate.dll
+E:\dotNet Solutions\Engeline\Engeline_LuckyEnt\MyHibernate\obj\Release\MyHibernate.pdb
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\MyHibernate.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\MyHibernate.pdb
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\NHibernate.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\Iesi.Collections.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\Antlr3.Runtime.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\bin\Release\log4net.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\obj\Release\ResolveAssemblyReference.cache
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\obj\Release\MyHibernate.dll
+D:\@PROJECTS\Engeline\Engeline_LuckyEnt\MyHibernate\obj\Release\MyHibernate.pdb

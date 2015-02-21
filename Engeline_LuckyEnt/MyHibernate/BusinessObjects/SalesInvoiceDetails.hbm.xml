@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'SalesInvoiceDetails' -->
+  <class name="MyHibernate.BusinessObjects.SalesInvoiceDetails, MyHibernate" table="SalesInvoiceDetails" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="salesinvoice" class="SalesInvoice" column="SalesInvoiceID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="item" class="Items" column="ItemID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="fabitem" class="FabricatedItem" column="FabID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="tradeitem" class="TradingItem" column="TradeID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="bundleditem" class="BundledItem" column="BundleID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="QTY1" />
+    <property name="QTY2" />
+    <property name="QTY_Returned" />
+    <property name="AgentDiscount" />
+    <property name="AgentPrice1" />
+    <property name="AgentPrice2" />
+    <property name="CustomerDiscount" />
+    <property name="CustomerPrice1" />
+    <property name="CustomerPrice2" />
+    <property name="LoanedItemDetailsID" />
+
+    <bag name="stockindetails" inverse="true" cascade="none" lazy="false">
+      <key column="SIV_DetailsID" />
+      <one-to-many class="SalesInvoiceDetails_StockIn" />
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyHibernate.BusinessObjects.Counter">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <NestedTypes>
+      <Enum Name="MyHibernate.BusinessObjects.Counter.eStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\Counter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAEAAAAgACEAQgGEACCAAAAAGAAAAAAAACAABI=</HashCode>
+      <FileName>BusinessObjects\Counter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="details" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.CounterDetails">
+    <Position X="3.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\CounterDetails.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="invoice" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.SalesInvoice" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MyHibernate.BusinessObjects.SalesInvoice.eInvoiceType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\SalesInvoice.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="MyHibernate.BusinessObjects.SalesInvoice.ePaymentType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\SalesInvoice.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="MyHibernate.BusinessObjects.SalesInvoice.ePaymentStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BusinessObjects\SalesInvoice.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AFEgCCBAAAAAhACAEQAQEQgAIJAQIGCCgAAAAACAABI=</HashCode>
+      <FileName>BusinessObjects\SalesInvoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHibernate.BusinessObjects.Contacts" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UPABSEAAIThihCAmAAEaBAAgCAAANjUCTAAYAgYQMJ4=</HashCode>
+      <FileName>BusinessObjects\Contacts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'StatementofAccountDetails' -->
+  <class name="MyHibernate.BusinessObjects.StatementofAccountDetails, MyHibernate" table="statementofaccountdetails" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="statementofaccount" class="StatementofAccount" column="SOC_ID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="VanNumber" column="VanNumber" />
+
+    <many-to-one name="VanTracker" class="Vantrackers" column="VanTracker" cascade="none" lazy="false"></many-to-one>
+    <many-to-one name="WhDestination" class="Warehouse" column="WhDestination" cascade="none" lazy="false"></many-to-one>
+    <many-to-one name="CustomerDestination" class="Contacts" column="CustomerDestination" cascade="none" lazy="false"></many-to-one>
+    <many-to-one name="item" class="Items" column="ItemID" cascade="none" lazy="false"></many-to-one>
+    
+    <property name="QTY" column="QTY" />
+    <property name="SellingPrice" column="SellingPrice" />
+    <property name="Status" column="Status" />
+    <property name="ItemIndex" column="ItemIndex" />
+    
+  </class>
+</hibernate-mapping>

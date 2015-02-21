@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'QuotationDetails' -->
+  <class name="MyHibernate.BusinessObjects.QuotationDetails, MyHibernate" table="QuotationDetails" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="quotation" class="Quotation" column="QuotationID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="item" class="Items" column="ItemID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="fabitem" class="FabricatedItem" column="FabID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="tradeitem" class="TradingItem" column="TradeID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="QTY1" column="QTY1" />
+    <property name="QTY2" column="QTY2" />
+    <property name="AgentDiscount" column="AgentDiscount" />
+    <property name="AgentPrice1" column="AgentPrice1" />
+    <property name="AgentPrice2" column="AgentPrice2" />
+    <property name="CustomerDiscount" column="CustomerDiscount" />
+    <property name="CustomerPrice1" column="CustomerPrice1" />
+    <property name="CustomerPrice2" column="CustomerPrice2" />
+  </class>
+</hibernate-mapping>

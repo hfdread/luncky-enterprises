@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80652E37-A3AF-4BC2-9A01-4A35997F1CA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHibernate</RootNamespace>
+    <AssemblyName>MyHibernate</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\AgentCommission.cs" />
+    <Compile Include="BusinessObjects\AgentCommissionItemDetails.cs" />
+    <Compile Include="BusinessObjects\AgentQuota.cs" />
+    <Compile Include="BusinessObjects\AgentQuotaExemptItem.cs" />
+    <Compile Include="BusinessObjects\AgentQuotaFixSalesDetails.cs" />
+    <Compile Include="BusinessObjects\AgentQuotaItemDetails.cs" />
+    <Compile Include="BusinessObjects\BadOrder.cs" />
+    <Compile Include="BusinessObjects\BadOrderDetails.cs" />
+    <Compile Include="BusinessObjects\Banks.cs" />
+    <Compile Include="BusinessObjects\BundledItem.cs" />
+    <Compile Include="BusinessObjects\BundledItemDetails.cs" />
+    <Compile Include="BusinessObjects\CompanyProfile.cs" />
+    <Compile Include="BusinessObjects\Contacts.cs" />
+    <Compile Include="BusinessObjects\Counter.cs" />
+    <Compile Include="BusinessObjects\CounterDetails.cs" />
+    <Compile Include="BusinessObjects\CustomerCommission.cs" />
+    <Compile Include="BusinessObjects\DamagedMissing.cs" />
+    <Compile Include="BusinessObjects\FabricatedItem.cs" />
+    <Compile Include="BusinessObjects\Freight.cs" />
+    <Compile Include="BusinessObjects\ItemCategory.cs" />
+    <Compile Include="BusinessObjects\Items.cs" />
+    <Compile Include="BusinessObjects\LoanedItems.cs" />
+    <Compile Include="BusinessObjects\LoanedItemsDetails.cs" />
+    <Compile Include="BusinessObjects\LoanedItemsDetails_StockIn.cs" />
+    <Compile Include="BusinessObjects\Payments.cs" />
+    <Compile Include="BusinessObjects\PaymentsDetail.cs" />
+    <Compile Include="BusinessObjects\PaymentsPDC.cs" />
+    <Compile Include="BusinessObjects\PurchaseOrder.cs" />
+    <Compile Include="BusinessObjects\PurchaseOrderDetails.cs" />
+    <Compile Include="BusinessObjects\PurchaseOrderDiscounts.cs" />
+    <Compile Include="BusinessObjects\Quotation.cs" />
+    <Compile Include="BusinessObjects\QuotationDetails.cs" />
+    <Compile Include="BusinessObjects\ReleaseOrder.cs" />
+    <Compile Include="BusinessObjects\RequestApproval.cs" />
+    <Compile Include="BusinessObjects\ReturnedItems.cs" />
+    <Compile Include="BusinessObjects\ReturnedItemsDetails.cs" />
+    <Compile Include="BusinessObjects\ReturnedItemsDetails_StockIn.cs" />
+    <Compile Include="BusinessObjects\rptReleaseOrder.cs" />
+    <Compile Include="BusinessObjects\SalesInvoice.cs" />
+    <Compile Include="BusinessObjects\SalesInvoiceDetails.cs" />
+    <Compile Include="BusinessObjects\SalesInvoiceDetails_StockIn.cs" />
+    <Compile Include="BusinessObjects\SalesInvoiceWithDetails.cs" />
+    <Compile Include="BusinessObjects\SalesReportDetails.cs" />
+    <Compile Include="BusinessObjects\Settings.cs" />
+    <Compile Include="BusinessObjects\Shipping.cs" />
+    <Compile Include="BusinessObjects\SOC_Payments.cs" />
+    <Compile Include="BusinessObjects\StatementofAccount.cs" />
+    <Compile Include="BusinessObjects\StatementofAccountDetails.cs" />
+    <Compile Include="BusinessObjects\StockIn.cs" />
+    <Compile Include="BusinessObjects\StockInDetails.cs" />
+    <Compile Include="BusinessObjects\TradingItem.cs" />
+    <Compile Include="BusinessObjects\UserPermissions.cs" />
+    <Compile Include="BusinessObjects\Users.cs" />
+    <Compile Include="BusinessObjects\Vantrackers.cs" />
+    <Compile Include="BusinessObjects\Voucher.cs" />
+    <Compile Include="BusinessObjects\VoucherDetails.cs" />
+    <Compile Include="BusinessObjects\VoucherPayment.cs" />
+    <Compile Include="BusinessObjects\Warehouse.cs" />
+    <Compile Include="BusinessObjects\WireBreakdown.cs" />
+    <Compile Include="DataAccessLayer\AgentCommissionDao.cs" />
+    <Compile Include="DataAccessLayer\AgentCommissionItemDetailsDao.cs" />
+    <Compile Include="DataAccessLayer\AgentQuotaDao.cs" />
+    <Compile Include="DataAccessLayer\AgentQuotaFixSalesDetailsDao.cs" />
+    <Compile Include="DataAccessLayer\AgentQuotaItemDetailsDao.cs" />
+    <Compile Include="DataAccessLayer\BanksDao.cs" />
+    <Compile Include="DataAccessLayer\BundledItemDao.cs" />
+    <Compile Include="DataAccessLayer\CompanyProfileDao.cs" />
+    <Compile Include="DataAccessLayer\ContactsDao.cs" />
+    <Compile Include="DataAccessLayer\CounterDao.cs" />
+    <Compile Include="DataAccessLayer\DamagedMissingDao.cs" />
+    <Compile Include="DataAccessLayer\FabricatedItemDao.cs" />
+    <Compile Include="DataAccessLayer\FreightDao.cs" />
+    <Compile Include="DataAccessLayer\GenericDao.cs" />
+    <Compile Include="DataAccessLayer\ItemCategoryDao.cs" />
+    <Compile Include="DataAccessLayer\ItemDao.cs" />
+    <Compile Include="DataAccessLayer\LoanedItemsDao.cs" />
+    <Compile Include="DataAccessLayer\PaymentsDao.cs" />
+    <Compile Include="DataAccessLayer\PaymentsDetailDao.cs" />
+    <Compile Include="DataAccessLayer\PurchaseOrderDao.cs" />
+    <Compile Include="DataAccessLayer\PurchaseOrderDetailDao.cs" />
+    <Compile Include="DataAccessLayer\PurchaseOrderDiscountsDao.cs" />
+    <Compile Include="DataAccessLayer\ReleaseOrderDao.cs" />
+    <Compile Include="DataAccessLayer\RequestApprovalDao.cs" />
+    <Compile Include="DataAccessLayer\ReturnedItemsDao.cs" />
+    <Compile Include="DataAccessLayer\SalesInvoiceDao.cs" />
+    <Compile Include="DataAccessLayer\SalesInvoiceDetailsDao.cs" />
+    <Compile Include="DataAccessLayer\SettingsDao.cs" />
+    <Compile Include="DataAccessLayer\ShippingDao.cs" />
+    <Compile Include="DataAccessLayer\SOC_PaymentsDao.cs" />
+    <Compile Include="DataAccessLayer\StatementofAccountDao.cs" />
+    <Compile Include="DataAccessLayer\StatementofAccountDetailsDao.cs" />
+    <Compile Include="DataAccessLayer\StockInDao.cs" />
+    <Compile Include="DataAccessLayer\StockInDetailsDao.cs" />
+    <Compile Include="DataAccessLayer\TradingItemDao.cs" />
+    <Compile Include="DataAccessLayer\UserPermissionsDao.cs" />
+    <Compile Include="DataAccessLayer\UsersDao.cs" />
+    <Compile Include="DataAccessLayer\VantrackersDao.cs" />
+    <Compile Include="DataAccessLayer\WarehouseDao.cs" />
+    <Compile Include="Factories\MyORM.cs" />
+    <Compile Include="SimpleAES.cs" />
+    <Compile Include="clsDBConnect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\Warehouse.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\Banks.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Contacts.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\AgentCommission.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\AgentCommissionItemDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\AgentQuota.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\AgentQuotaExemptItem.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\AgentQuotaFixSalesDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\AgentQuotaItemDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\BadOrder.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\BadOrderDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\BundledItem.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\BundledItemDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\CompanyProfile.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Counter.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\CounterDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\CustomerCommission.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\FabricatedItem.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Freight.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\ItemCategory.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Items.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\LoanedItems.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\LoanedItemsDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\LoanedItemsDetails_StockIn.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Payments.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\PaymentsDetail.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\PaymentsPDC.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\PurchaseOrder.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\PurchaseOrderDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\PurchaseOrderDiscounts.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Quotation.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\QuotationDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\RequestApproval.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\ReturnedItems.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\ReturnedItemsDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\ReturnedItemsDetails_StockIn.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\SalesInvoice.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\SalesInvoiceDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\SalesInvoiceDetails_StockIn.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\SalesInvoiceWithDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Settings.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\StockIn.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\StockInDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\TradingItem.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\UserPermissions.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Users.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Voucher.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\VoucherDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\VoucherPayment.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\WireBreakdown.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagrams\ClassDiagram1.cd" />
+    <None Include="ClassDiagrams\Counter.cd" />
+    <None Include="ClassDiagrams\LoanedItems.cd" />
+    <None Include="ClassDiagrams\SalesInvoice.cd" />
+    <None Include="ClassDiagrams\StockIn.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\StatementofAccount.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\StatementofAccountDetails.hbm.xml" />
+    <EmbeddedResource Include="BusinessObjects\Vantrackers.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\Shipping.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\SOC_Payments.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\DamagedMissing.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\ReleaseOrder.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

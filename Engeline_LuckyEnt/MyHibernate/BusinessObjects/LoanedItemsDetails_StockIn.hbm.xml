@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'LoanedItemsDetails_StockIn' -->
+  <class name="MyHibernate.BusinessObjects.LoanedItemsDetails_StockIn, MyHibernate" table="LoanedItemsDetails_StockIn"
+         lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="loanedItemsDetails" class="LoanedItemsDetails" column="LoanedItemsDetailsID" cascade="none"
+                 lazy="false"></many-to-one>
+
+    <many-to-one name="stockindetails" class="StockInDetails" column="StockInDetailsID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="QTY1" />
+    <property name="QTY2" />
+    <property name="QTY_Returned" />
+    <property name="QTY_Invoiced" />
+    <property name="SellingDiscount1" />
+    <property name="SellingDiscount2" />
+    <property name="SellingPrice1" />
+    <property name="SellingPrice2" />
+
+    <many-to-one name="wirebreakdown" class="WireBreakdown" column="Roll_ID" cascade="none" lazy="false"></many-to-one>
+  </class>
+</hibernate-mapping>

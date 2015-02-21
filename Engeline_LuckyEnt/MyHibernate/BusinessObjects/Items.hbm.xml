@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'Items' -->
+  <class name="MyHibernate.BusinessObjects.Items, MyHibernate" table="items" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <property name="Name" column="Name" />
+    <property name="Description" column="Description" />
+    <property name="ItemDate" column="ItemDate" />
+    <property name="Price1" column="Price1" />
+    <property name="Price2" column="Price2" />
+    <property name="QTYOnHand1" column="QTYOnHand1" />
+    <property name="QTYOnHand2" column="QTYOnHand2" />
+    <property name="ItemType" column="ItemType" />
+    <property name="QTY2" column="QTY2" />
+    <property name="IsWire" column="IsWire" />
+    <property name="wh_id" column="wh_id" />
+    <property name="LowThreshold" column="LowThreshold"/>
+    <property name="Code" column="Code" />
+    <property name="Unit" column="Unit"/>
+
+    <many-to-one name="category" class="ItemCategory" column="CategoryID" cascade="none" lazy="false"></many-to-one>
+  </class>
+</hibernate-mapping>

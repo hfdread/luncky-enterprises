@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'ReturnedItemsDetails_StockIn' -->
+  <class name="MyHibernate.BusinessObjects.ReturnedItemsDetails_StockIn, MyHibernate"
+         table="ReturnedItemsDetails_StockIn" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="returneditemsdetail" class="ReturnedItemsDetails" column="DetailsID" cascade="none"
+                 lazy="false"></many-to-one>
+
+    <many-to-one name="stockindetails" class="StockInDetails" column="SID_ID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="wirebreakdown" class="WireBreakdown" column="Roll_ID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="QTY1" column="QTY1" />
+    <property name="QTY2" column="QTY2" />
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'Counter' -->
+  <class name="MyHibernate.BusinessObjects.Counter, MyHibernate" table="Counter" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Customer" class="Contacts" column="CustomerID" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+
+    <property name="CounterDate" />
+    <property name="CounterDueDate" />
+    <property name="Amount" />
+    <property name="Balance" />
+    <property name="PaymentCash" />
+    <property name="PaymentPDC" />
+    <property name="PaymentForDeposit" />
+    <property name="PaymentWithHolding" />
+    <property name="Status" />
+    <property name="PrintStatus" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'AgentQuota' -->
+  <class name="MyHibernate.BusinessObjects.AgentQuota, MyHibernate" table="AgentQuota" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Agent" class="Contacts" column="AgentID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="FixSalesDetails" class="AgentQuotaFixSalesDetails" column="FixSalesDetailsID" cascade="none"
+                 lazy="false" not-found="ignore"></many-to-one>
+
+    <bag name="ItemDetails" inverse="true" cascade="none" lazy="false">
+      <key column="QuotaID" />
+      <one-to-many class="AgentQuotaItemDetails" />
+    </bag>
+
+    <property name="Quota" />
+  </class>
+</hibernate-mapping>

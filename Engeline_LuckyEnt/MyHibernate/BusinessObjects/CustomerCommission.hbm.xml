@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'CustomerCommission' -->
+  <class name="MyHibernate.BusinessObjects.CustomerCommission, MyHibernate" table="CustomerCommission" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Customer" class="Contacts" column="CustomerID" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+
+    <many-to-one name="Invoice" class="SalesInvoice" column="InvoiceID" cascade="none" lazy="false"
+                 not-found="ignore"></many-to-one>
+
+    <property name="Amount" />
+    <property name="Status" />
+  </class>
+</hibernate-mapping>

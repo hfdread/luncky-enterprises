@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'PurchaseOrderDetails' -->
+  <class name="MyHibernate.BusinessObjects.PurchaseOrderDetails, MyHibernate" table="purchaseorderdetails"
+         lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="purchaseorder" class="PurchaseOrder" column="PO_ID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="item" class="Items" column="ItemID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="fabricateditem" class="FabricatedItem" column="FabID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="tradingitem" class="TradingItem" column="TradingID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="QTY1" column="QTY1" />
+    <property name="QTY2" column="QTY2" />
+    <property name="SellingPrice1" column="SellingPrice1" />
+    <property name="SellingPrice2" column="SellingPrice2" />
+    <property name="Discount" column="Discount" />
+    <property name="Status" column="Status" />
+    <property name="ItemIndex" column="ItemIndex" />
+  </class>
+</hibernate-mapping>

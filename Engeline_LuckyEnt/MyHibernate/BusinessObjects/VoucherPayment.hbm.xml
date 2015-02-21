@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'VoucherPayment' -->
+  <class name="MyHibernate.BusinessObjects.VoucherPayment, MyHibernate" table="VoucherPayment" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="bank" class="Banks" column="BankID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="VoucherID" />
+    <property name="AccountNumber" length="30" />
+    <property name="CheckNumber" length="30" />
+    <property name="Amount" />
+    <property name="CheckDate" />
+    <property name="ClearingDate" />
+    <property name="Status" />
+  </class>
+</hibernate-mapping>

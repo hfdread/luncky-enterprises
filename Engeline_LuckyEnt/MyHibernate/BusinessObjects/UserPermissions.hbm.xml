@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'UserPermissions' -->
+  <class name="MyHibernate.BusinessObjects.UserPermissions, MyHibernate" table="userpermissions" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="user" class="Users" column="UserID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="ContactsAdd" column="ContactsAdd" />
+    <property name="ContactsEdit" column="ContactsEdit" />
+    <property name="ContactsDelete" column="ContactsDelete" />
+    <property name="ContactsViewSuppliersManila" column="ContactsViewSuppliersManila" />
+    <property name="PO_Add" column="PO_Add" />
+    <property name="PO_AddSuppliersManila" column="PO_AddSuppliersManila" />
+    <property name="PO_Edit" column="PO_Edit" />
+    <property name="PO_Delete" column="PO_Delete" />
+    <property name="PO_ViewSuppliersManila" column="PO_ViewSuppliersManila" />
+    <property name="PO_ChangeStatus" column="PO_ChangeStatus" />
+    <property name="SI_Add" column="SI_Add" />
+    <property name="SI_Edit" column="SI_Edit" />
+    <property name="SI_Delete" column="SI_Delete" />
+    <property name="SI_AddSuppliersManila" column="SI_AddSuppliersManila" />
+    <property name="SI_ViewSuppliersManila" column="SI_ViewSuppliersManila" />
+    <property name="SI_Freight" column="SI_Freight" />
+    <property name="Item_Add" column="Item_Add" />
+    <property name="Item_Edit" column="Item_Edit" />
+    <property name="Item_Delete" column="Item_Delete" />
+    <property name="SIV_Add" column="SIV_Add" />
+    <property name="SIV_Edit" column="SIV_Edit" />
+    <property name="SIV_Delete" column="SIV_Delete" />
+    <property name="Voucher_Add" column="Voucher_Add" />
+    <property name="Voucher_Edit" column="Voucher_Edit" />
+    <property name="Voucher_Delete" column="Voucher_Delete" />
+    <property name="Counter_Add" column="Counter_Add" />
+    <property name="Counter_Edit" column="Counter_Edit" />
+    <property name="Counter_Delete" column="Counter_Delete" />
+    <property name="Counter_SetPaid" column="Counter_SetPaid" />
+    <property name="Counter_PaymentAdd" column="Counter_PaymentAdd" />
+    <property name="Counter_PaymentDelete" column="Counter_PaymentDelete" />
+
+    <property name="LoanedItems_Add"/>
+    <property name="LoanedItems_Edit"/>
+    <property name="LoanedItems_Delete"/>
+    <property name="Quotation_Add"/>
+    <property name="Quotation_Edit"/>
+    <property name="Quotation_Delete"/>
+    
+    <property name="View_Contacts" column="View_Contacts" />
+    <property name="View_PO" column="View_PO" />
+    <property name="View_StockIn" column="View_StockIn" />
+    <property name="View_BO" column="View_BO" />
+    <property name="View_ReturnedItems" column="View_ReturnedItems" />
+    <property name="View_Vouchers" column="View_Vouchers" />
+    <property name="View_Inventory" column="View_Inventory" />
+    <property name="View_SalesInvoice" column="View_SalesInvoice" />
+    <property name="View_Checks" column="View_Checks" />
+    <property name="View_Payments" column="View_Payments" />
+    <property name="View_Agents" column="View_Agents" />
+    <property name="View_DailySummaryReport" column="View_DailySummaryReport" />
+    <property name="View_CustomerAccounting" column="View_CustomerAccounting" />
+    <property name="View_CustomerCommission" column="View_CustomerCommission" />
+  </class>
+</hibernate-mapping>

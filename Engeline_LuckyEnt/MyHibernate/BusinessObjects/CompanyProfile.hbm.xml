@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'CompanyProfile' -->
+  <class name="MyHibernate.BusinessObjects.CompanyProfile, MyHibernate" table="companyprofile" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <property name="CompanyName" column="CompanyName" />
+    <property name="Address" column="Address" />
+    <property name="Phone" column="Phone" />
+    <property name="Fax" column="Fax" />
+    <property name="Email" column="Email" />
+    <property name="Website" column="Website" />
+    <property name="SSS" column="SSS" />
+    <property name="TIN" column="TIN" />
+  </class>
+</hibernate-mapping>

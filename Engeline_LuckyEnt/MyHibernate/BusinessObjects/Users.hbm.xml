@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'Users' -->
+  <class name="MyHibernate.BusinessObjects.Users, MyHibernate" table="users" lazy="false">
+
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <property name="UserName" />
+    <property name="UserPassword" />
+    <property name="UserType" />
+    <property name="IP_Address" />
+  </class>
+</hibernate-mapping>

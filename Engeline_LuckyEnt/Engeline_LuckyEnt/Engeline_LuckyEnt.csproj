@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19141D59-4435-4836-97DD-FAFF4B7E8F1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Engeline_LuckyEnt</RootNamespace>
+    <AssemblyName>Engeline_LuckyEnt</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.Data.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v11.2.Core, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.2.Core.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.RichEdit.v11.2.Core.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.Utils.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraBars.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraCharts.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraEditors.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraGrid.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraNavBar.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraPivotGrid.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraPrinting.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.2.Extensions.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraReports.v11.2.Extensions.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraReports.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraRichEdit.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.2.resources, Version=11.2.0.0, Culture=es, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>bin\Release\es\DevExpress.XtraTreeList.v11.2.resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NHibernate">
+      <HintPath>..\..\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsSimpleAES.cs" />
+    <Compile Include="Classes\clsUtil.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDBConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDBConnect.Designer.cs">
+      <DependentUpon>frmDBConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGenericPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGenericPopup.Designer.cs">
+      <DependentUpon>frmGenericPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain2.Designer.cs">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI Controls\Accounting\ctlPaymentPDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Accounting\ctlPaymentPDC.designer.cs">
+      <DependentUpon>ctlPaymentPDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Accounting\ctlReceivePayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Accounting\ctlReceivePayment.designer.cs">
+      <DependentUpon>ctlReceivePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Reports\xrptReleaseOrders.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Reports\xrptReleaseOrders.Designer.cs">
+      <DependentUpon>xrptReleaseOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlFreight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlFreight.designer.cs">
+      <DependentUpon>ctlFreight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlInputPO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlInputPO.designer.cs">
+      <DependentUpon>ctlInputPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlInputPOSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlInputPOSelect.designer.cs">
+      <DependentUpon>ctlInputPOSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlNoPriceItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlNoPriceItems.designer.cs">
+      <DependentUpon>ctlNoPriceItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlNoPriceItemSetPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlNoPriceItemSetPrice.designer.cs">
+      <DependentUpon>ctlNoPriceItemSetPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlPurchaseOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlPurchaseOrder.designer.cs">
+      <DependentUpon>ctlPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlReleaseOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlReleaseOrder.Designer.cs">
+      <DependentUpon>ctlReleaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSalesInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSalesInvoice.Designer.cs">
+      <DependentUpon>ctlSalesInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSalesInvoiceChangePrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSalesInvoiceChangePrice.Designer.cs">
+      <DependentUpon>ctlSalesInvoiceChangePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSelectItems_Invoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSelectItems_Invoice.Designer.cs">
+      <DependentUpon>ctlSelectItems_Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSelectItems_PO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSelectItems_PO.designer.cs">
+      <DependentUpon>ctlSelectItems_PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSelectMiscItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlSelectMiscItem.designer.cs">
+      <DependentUpon>ctlSelectMiscItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStatementofAccount_ReceivePayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStatementofAccount_ReceivePayment.Designer.cs">
+      <DependentUpon>ctlStatementofAccount_ReceivePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStateofAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStateofAccounts.Designer.cs">
+      <DependentUpon>ctlStateofAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStateofAccounts_AddItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStateofAccounts_AddItem.Designer.cs">
+      <DependentUpon>ctlStateofAccounts_AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStockIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStockIn.designer.cs">
+      <DependentUpon>ctlStockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStockin_DamagedMissingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStockin_DamagedMissingForm.Designer.cs">
+      <DependentUpon>ctlStockin_DamagedMissingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStockin_UpdateWarehouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Transactions\ctlStockin_UpdateWarehouse.Designer.cs">
+      <DependentUpon>ctlStockin_UpdateWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\User\ctlUserDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\User\ctlUserDetails.Designer.cs">
+      <DependentUpon>ctlUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\User\ctlUserLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\User\ctlUserLogin.Designer.cs">
+      <DependentUpon>ctlUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\User\ctlUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\User\ctlUsers.Designer.cs">
+      <DependentUpon>ctlUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlCompanyProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlCompanyProfile.Designer.cs">
+      <DependentUpon>ctlCompanyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlDateRange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlDateRange.designer.cs">
+      <DependentUpon>ctlDateRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlDestination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlDestination.Designer.cs">
+      <DependentUpon>ctlDestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlRequestApproval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlRequestApproval.Designer.cs">
+      <DependentUpon>ctlRequestApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlRequestSend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlRequestSend.Designer.cs">
+      <DependentUpon>ctlRequestSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlShipping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlShipping.Designer.cs">
+      <DependentUpon>ctlShipping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlTrucking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlTrucking.Designer.cs">
+      <DependentUpon>ctlTrucking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlVantrackers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlVantrackers.Designer.cs">
+      <DependentUpon>ctlVantrackers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlViewRequestApproval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlViewRequestApproval.Designer.cs">
+      <DependentUpon>ctlViewRequestApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlWarehouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Utilities\ctlWarehouse.Designer.cs">
+      <DependentUpon>ctlWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlContacts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlContacts.Designer.cs">
+      <DependentUpon>ctlContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlItems.designer.cs">
+      <DependentUpon>ctlItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewAgents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewAgents.Designer.cs">
+      <DependentUpon>ctlViewAgents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewArriveShipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewArriveShipment.Designer.cs">
+      <DependentUpon>ctlViewArriveShipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewArriveShipment_Trucking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewArriveShipment_Trucking.Designer.cs">
+      <DependentUpon>ctlViewArriveShipment_Trucking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewBanks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewBanks.designer.cs">
+      <DependentUpon>ctlViewBanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewDamagedMissing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewDamagedMissing.Designer.cs">
+      <DependentUpon>ctlViewDamagedMissing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewDamagedMissing_Salvage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewDamagedMissing_Salvage.Designer.cs">
+      <DependentUpon>ctlViewDamagedMissing_Salvage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewInventory.Designer.cs">
+      <DependentUpon>ctlViewInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewPurchaseOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewPurchaseOrders.designer.cs">
+      <DependentUpon>ctlViewPurchaseOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewSalesInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewSalesInvoice.designer.cs">
+      <DependentUpon>ctlViewSalesInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewStatement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewStatement.Designer.cs">
+      <DependentUpon>ctlViewStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewStockIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewStockIn.designer.cs">
+      <DependentUpon>ctlViewStockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewWarehouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\Viewers\ctlViewWarehouse.Designer.cs">
+      <DependentUpon>ctlViewWarehouse.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\frmDBConnect.resx">
+      <DependentUpon>frmDBConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGenericPopup.resx">
+      <DependentUpon>frmGenericPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain2.resx">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI Controls\Accounting\ctlPaymentPDC.resx">
+      <DependentUpon>ctlPaymentPDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Accounting\ctlReceivePayment.resx">
+      <DependentUpon>ctlReceivePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Reports\xrptReleaseOrders.resx">
+      <DependentUpon>xrptReleaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlFreight.resx">
+      <DependentUpon>ctlFreight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlInputPO.resx">
+      <DependentUpon>ctlInputPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlInputPOSelect.resx">
+      <DependentUpon>ctlInputPOSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlNoPriceItems.resx">
+      <DependentUpon>ctlNoPriceItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlNoPriceItemSetPrice.resx">
+      <DependentUpon>ctlNoPriceItemSetPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlPurchaseOrder.resx">
+      <DependentUpon>ctlPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlReleaseOrder.resx">
+      <DependentUpon>ctlReleaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlSalesInvoice.resx">
+      <DependentUpon>ctlSalesInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlSalesInvoiceChangePrice.resx">
+      <DependentUpon>ctlSalesInvoiceChangePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlSelectItems_Invoice.resx">
+      <DependentUpon>ctlSelectItems_Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlSelectItems_PO.resx">
+      <DependentUpon>ctlSelectItems_PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlSelectMiscItem.resx">
+      <DependentUpon>ctlSelectMiscItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlStatementofAccount_ReceivePayment.resx">
+      <DependentUpon>ctlStatementofAccount_ReceivePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlStateofAccounts.resx">
+      <DependentUpon>ctlStateofAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlStateofAccounts_AddItem.resx">
+      <DependentUpon>ctlStateofAccounts_AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlStockIn.resx">
+      <DependentUpon>ctlStockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlStockin_DamagedMissingForm.resx">
+      <DependentUpon>ctlStockin_DamagedMissingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Transactions\ctlStockin_UpdateWarehouse.resx">
+      <DependentUpon>ctlStockin_UpdateWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\User\ctlUserDetails.resx">
+      <DependentUpon>ctlUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\User\ctlUserLogin.resx">
+      <DependentUpon>ctlUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\User\ctlUsers.resx">
+      <DependentUpon>ctlUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlCompanyProfile.resx">
+      <DependentUpon>ctlCompanyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlDateRange.resx">
+      <DependentUpon>ctlDateRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlDestination.resx">
+      <DependentUpon>ctlDestination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlRequestApproval.resx">
+      <DependentUpon>ctlRequestApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlRequestSend.resx">
+      <DependentUpon>ctlRequestSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlShipping.resx">
+      <DependentUpon>ctlShipping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlTrucking.resx">
+      <DependentUpon>ctlTrucking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlVantrackers.resx">
+      <DependentUpon>ctlVantrackers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlViewRequestApproval.resx">
+      <DependentUpon>ctlViewRequestApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Utilities\ctlWarehouse.resx">
+      <DependentUpon>ctlWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlContacts.resx">
+      <DependentUpon>ctlContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlItems.resx">
+      <DependentUpon>ctlItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewAgents.resx">
+      <DependentUpon>ctlViewAgents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewArriveShipment.resx">
+      <DependentUpon>ctlViewArriveShipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewArriveShipment_Trucking.resx">
+      <DependentUpon>ctlViewArriveShipment_Trucking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewBanks.resx">
+      <DependentUpon>ctlViewBanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewDamagedMissing.resx">
+      <DependentUpon>ctlViewDamagedMissing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewDamagedMissing_Salvage.resx">
+      <DependentUpon>ctlViewDamagedMissing_Salvage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewInventory.resx">
+      <DependentUpon>ctlViewInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewPurchaseOrders.resx">
+      <DependentUpon>ctlViewPurchaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewSalesInvoice.resx">
+      <DependentUpon>ctlViewSalesInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewStatement.resx">
+      <DependentUpon>ctlViewStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewStockIn.resx">
+      <DependentUpon>ctlViewStockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\Viewers\ctlViewWarehouse.resx">
+      <DependentUpon>ctlViewWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHibernate\MyHibernate.csproj">
+      <Project>{80652E37-A3AF-4BC2-9A01-4A35997F1CA0}</Project>
+      <Name>MyHibernate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

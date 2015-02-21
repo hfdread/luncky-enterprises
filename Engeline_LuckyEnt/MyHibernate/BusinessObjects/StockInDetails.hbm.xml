@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'StockInDetails' -->
+  <class name="MyHibernate.BusinessObjects.StockInDetails, MyHibernate" table="StockInDetails" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="stockin" class="StockIn" column="StockInID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="ItemIndex" column="ItemIndex" />
+
+    <many-to-one name="item" class="Items" column="ItemID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="fabricateditem" class="FabricatedItem" column="FabID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="tradingitem" class="TradingItem" column="TradeID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="WarehouseStockin" />
+    <property name="QTY1" />
+    <property name="QTY2" />
+    <property name="QTY_OnHand1" />
+    <property name="QTY_OnHand2" />
+    <property name="QTY_OnHandWire" />
+    <property name="QTY_BadOrder" />
+    <property name="Price1" />
+    <property name="Price2" />
+    <property name="SellingPrice1" />
+    <property name="SellingPrice2" />
+    <property name="SellingDiscount1" />
+    <property name="SellingDiscount2" />
+    <property name="Status" />
+    <property name="freight" />
+    <property name="Discount" />
+
+    <bag name="wirebreakdown_details" inverse="true" cascade="none" lazy="false">
+      <key column="StockInDetails_ID" />
+      <one-to-many class="WireBreakdown" />
+    </bag>
+  </class>
+</hibernate-mapping>

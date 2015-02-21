@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+
+  <!-- Mappings for class 'StockIn' -->
+  <class name="MyHibernate.BusinessObjects.StockIn, MyHibernate" table="StockIn" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <!-- generator class="native" -->
+    </id>
+
+    <many-to-one name="purchaseorder" class="PurchaseOrder" column="PO_ID" cascade="none" lazy="false"></many-to-one>
+    <many-to-one name="statementofaccount" class="StatementofAccount" column="SOC_ID" cascade="none" lazy="false"></many-to-one>
+    <many-to-one name="damagedmissing" class="DamagedMissing" column="DM_ID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="StockInDate" column="StockInDate" />
+    <property name="Status" />
+    <property name="AmountDue" />
+    <property name="AmountPaid" />
+    <property name="Notes" length="100" />
+    <property name="InvoiceNo" length="30" />
+    <property name="DeliveryReceipt" length="30" />
+    <property name="PackingListNo" length="30" />
+    <property name="InvoiceDate" />
+    <property name="Shipper" length="50" />
+    <property name="WaybillNo" length="30" />
+    <property name="ShippingDate" />
+    <property name="ArrivalDate" />
+    <property name="DueDays" />
+    <property name="DueDate" />
+    <property name="Canceled" />
+    <property name="Paid" />
+    <property name="wh_id" />
+
+    <many-to-one name="freight" class="Freight" column="FreightID" cascade="none" lazy="false" not-found="ignore"></many-to-one>
+
+    <many-to-one name="user" class="Users" column="UserID" cascade="none" lazy="false"></many-to-one>
+
+    <bag name="details" inverse="true" cascade="none" lazy="false">
+      <key column="StockInID" />
+      <one-to-many class="StockInDetails" />
+    </bag>
+  </class>
+</hibernate-mapping>

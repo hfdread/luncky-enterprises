@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'ReturnedItems' -->
+  <class name="MyHibernate.BusinessObjects.ReturnedItems, MyHibernate" table="ReturnedItems" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="Invoice" class="SalesInvoice" column="InvoiceID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="TransactionDate" />
+    <property name="Amount" />
+    <property name="Notes" />
+    <property name="Canceled" />
+    <many-to-one name="EnteredBy" class="Users" column="EnteredBy" cascade="none" lazy="false"></many-to-one>
+  </class>
+</hibernate-mapping>

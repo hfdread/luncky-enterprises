@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="MyHibernate.BusinessObjects" assembly="MyHibernate">
+  <!-- Mappings for class 'FabricatedItem' -->
+  <class name="MyHibernate.BusinessObjects.FabricatedItem, MyHibernate" table="FabricatedItem" lazy="false">
+    <!-- Identity mapping -->
+    <id name="ID">
+      <column name="ID" />
+      <generator class="native" />
+    </id>
+
+    <many-to-one name="purchaseorder" class="PurchaseOrder" column="PO_ID" cascade="none" lazy="false"></many-to-one>
+
+    <many-to-one name="stockin" class="StockIn" column="StockInID" cascade="none" lazy="false"></many-to-one>
+
+    <property name="Name" />
+    <property name="Description" />
+    <property name="QTY" />
+    <property name="UnitPrice" />
+    <property name="Invoiced" />
+    <property name="Added" />
+  </class>
+</hibernate-mapping>
